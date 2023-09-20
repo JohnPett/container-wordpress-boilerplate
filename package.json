@@ -2,9 +2,9 @@
   "name": "wordpress-theme",
   "module": "index.js",
   "scripts": {
-    "css": "postcss css/tailwind.css -o style.css",
-    "start": "bun build ./js/index.js --outdir ./ --watch --minify",
+    "start": "bun build ./js/index.js --outdir ./ --watch",
     "javascript": "bun build ./js/index.js --outdir ./ --minify",
+    "css": "postcss css/tailwind.css -o style.css --minify",
     "production": "bun run javascript && bun run css"
   },
   "devDependencies": {
