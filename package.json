@@ -4,7 +4,7 @@
   "scripts": {
     "start": "bun run css-development && bun run javascript-development",
     "javascript-development": "bun build ./js/index.js --outdir ./ --watch",
-    "css-development": "postcss css/tailwind.css -o css/tailwind.min.css",
+    "css-development": "postcss css/tailwind.css -o css/tailwind.min.css --watch",
     "javascript-production": "bun build ./js/index.js --outdir ./ --minify",
     "css-production": "tailwind -o css/tailwind.min.css --minify",
     "lint": "eslint js/**/*.js --fix",
