@@ -14,8 +14,9 @@
 
 <body>
   <header class="header">
-    <nav>
-      <ul class="grid gap-3">
+    <nav class="flex">
+      <h1>Company Name</h1>
+      <ul class="grid grid-cols-3 gap-3 text-center">
         <li><a href="<?php echo home_url(); ?>">Home</a></li>
         <li><a href="<?php echo home_url(); ?>/about">About</a></li>
         <li><a href="<?php echo home_url(); ?>/contact">Contact</a></li>

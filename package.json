@@ -1,14 +1,13 @@
 {
-  "name": "wordpress-theme",
+  "name": "Container WordPress Boilerplate",
   "module": "index.js",
   "scripts": {
-    "start": "bun run css-development && bun run javascript-development",
-    "javascript-development": "bun build ./js/index.js --outdir ./ --watch",
-    "css-development": "postcss css/tailwind.css -o css/tailwind.min.css --watch",
-    "javascript-production": "bun build ./js/index.js --outdir ./ --minify",
-    "css-production": "tailwind -o css/tailwind.min.css --minify",
-    "lint": "eslint js/**/*.js --fix",
-    "production": "bun run javascript-production && bun run css-production && bun run lint"
+    "start": "bun run js-development",
+    "js-dev": "bun build ./js/index.js --outdir ./ --watch",
+    "css-dev": "postcss css/tailwind.css -o css/tailwind.min.css --watch",
+    "js-prd": "bun build ./js/index.js --outdir ./ --minify",
+    "css-prd": "tailwind -o css/tailwind.min.css --minify",
+    "lint": "eslint js/**/*.js --fix"
   },
   "devDependencies": {
     "eslint": "^8.49.0",

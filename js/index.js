@@ -1,3 +1,5 @@
+import '../css/tailwind.min.css'
+
 import { header } from './modules/header.js'
 
 const setupModules = (className, include) => {

@@ -1,6 +1,6 @@
-export function header () {
+export function header (el) {
   function init () {
-    console.log('init header')
+    console.log(el)
   }
 
   return { init }

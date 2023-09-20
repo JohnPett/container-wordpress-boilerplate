@@ -1,7 +1,7 @@
 // js/modules/header.js
-function header() {
+function header(el) {
   function init() {
-    console.log("init header");
+    console.log(el);
   }
   return { init };
 }
