@@ -3,7 +3,9 @@
   "module": "index.js",
   "scripts": {
     "css": "postcss css/tailwind.css -o style.css",
-    "start": "bun build ./js/index.js --outdir ./ --watch"
+    "start": "bun build ./js/index.js --outdir ./ --watch --minify",
+    "javascript": "bun build ./js/index.js --outdir ./ --minify",
+    "production": "bun run javascript && bun run css"
   },
   "devDependencies": {
     "eslint": "^8.49.0",
