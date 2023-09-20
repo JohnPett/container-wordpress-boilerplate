@@ -15,5 +15,4 @@ To run:
 bun start
 ```
 ### Demo
-https://containerbp.wpenginepowered.com/
-[Demo](https://containerbp.wpenginepowered.com/)
+[Demo Link](https://containerbp.wpenginepowered.com/)
