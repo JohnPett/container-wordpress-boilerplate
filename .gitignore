@@ -1,5 +1,10 @@
 bun.lockb
 
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+
 # Based on https://raw.githubusercontent.com/github/gitignore/main/Node.gitignore
 
 # Logs
