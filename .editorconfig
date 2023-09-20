@@ -21,8 +21,8 @@ charset = utf-8
 indent_style = space
 indent_size = 2
 
-# Indentation override for all SCSS under scss directory
-[**.scss]
+# Indentation override for all CSS under css directory
+[**.css]
 indent_style = space
 indent_size = 2
 
