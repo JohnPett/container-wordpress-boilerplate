@@ -2,10 +2,12 @@
   "name": "wordpress-theme",
   "module": "index.js",
   "scripts": {
-    "start": "bun build ./js/index.js --outdir ./ --watch",
-    "javascript": "bun build ./js/index.js --outdir ./ --minify",
-    "css": "postcss css/tailwind.css -o style.css --minify",
-    "production": "bun run javascript && bun run css"
+    "start": "bun run css-development && bun run javascript-development",
+    "javascript-development": "bun build ./js/index.js --outdir ./ --watch",
+    "css-development": "postcss css/tailwind.css -o css/tailwind.min.css",
+    "javascript-production": "bun build ./js/index.js --outdir ./ --minify",
+    "css-production": "tailwind -o css/tailwind.min.css --minify",
+    "production": "bun run javascript-production && bun run css-production"
   },
   "devDependencies": {
     "eslint": "^8.49.0",
