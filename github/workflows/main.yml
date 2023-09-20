@@ -2,7 +2,7 @@ name: Deploy to WP Engine
 on:
   push:
     branches:
-     - development
+     - main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,7 +12,7 @@ jobs:
       uses: wpengine/github-action-wpe-site-deploy@v3
       with:
         WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
-        WPE_ENV: development
-        REMOTE_PATH: "wp-content/themes/wordpress-theme/"
+        WPE_ENV: containerbp
+        REMOTE_PATH: "wp-content/themes/container-wordpress-boilerplate/"
         PHP_LINT: TRUE
         CACHE_CLEAR: TRUE
