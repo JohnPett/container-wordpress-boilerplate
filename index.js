@@ -7,11 +7,6 @@ function header() {
 }
 
 // js/index.js
-await Bun.build({
-  entrypoints: ["./js/index.js"],
-  outdir: "./",
-  minify: true
-});
 var setupModules = (className, include) => {
   return [...document.getElementsByClassName(className)].map((el) => {
     const module = include(el);
@@ -19,11 +14,8 @@ var setupModules = (className, include) => {
     return module;
   });
 };
-var initModules = () => {
-  setupModules("header", header);
-};
 var initSite = () => {
-  initModules();
+  setupModules("header", header);
 };
 if (document.addEventListener)
   document.addEventListener("DOMContentLoaded", initSite);
