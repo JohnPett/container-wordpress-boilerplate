@@ -8,3 +8,5 @@ Bitbucket Theme URI:    https://github.com/JohnPett/container-wordpress-boilerpl
 License:                GPL-2.0
 License URI:            http://www.gnu.org/licenses/gpl-2.0.html
 */
+
+@import url('./css/tailwind.min.css');

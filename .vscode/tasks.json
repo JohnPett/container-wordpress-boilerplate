@@ -2,20 +2,6 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "npm",
-			"script": "css-dev",
-			"problemMatcher": [],
-			"label": "css-development",
-			"detail": "postcss css/tailwind.css -o css/tailwind.min.css --watch"
-		},
-		{
-			"type": "npm",
-			"script": "js-dev",
-			"problemMatcher": [],
-			"label": "js-development",
-			"detail": "bun build ./js/index.js --outdir ./ --watch"
-		},
-		{
 			"label": "development",
 			"dependsOrder": "parallel",
 			"dependsOn": ["css-dev in package.json", "js-dev in package.json"]
