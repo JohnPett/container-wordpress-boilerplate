@@ -1,5 +1,4 @@
 <?php
-
   /*
     Add and enqueue CSS and JS to the <header>
   */
