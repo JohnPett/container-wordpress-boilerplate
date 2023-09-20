@@ -7,7 +7,7 @@
     "css-development": "postcss css/tailwind.css -o css/tailwind.min.css",
     "javascript-production": "bun build ./js/index.js --outdir ./ --minify",
     "css-production": "tailwind -o css/tailwind.min.css --minify",
-    "lint": "eslint js/**/*.js",
+    "lint": "eslint js/**/*.js --fix",
     "production": "bun run javascript-production && bun run css-production && bun run lint"
   },
   "devDependencies": {
