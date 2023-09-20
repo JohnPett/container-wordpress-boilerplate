@@ -1,4 +1,4 @@
-# Container WordPress Boilerplate
+## Container WordPress Boilerplate
 
 ### Features
 
