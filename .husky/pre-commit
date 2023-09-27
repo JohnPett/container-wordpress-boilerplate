@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-kill $(lsof -t -i :3000)
 echo "hello"
+kill $(lsof -t -i :3000)
 npm run prd
 
