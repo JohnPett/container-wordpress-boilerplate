@@ -1,1 +1,23 @@
-function g(f){function C(){console.log(f)}return{init:C}}var v=(f,C)=>{return[...document.getElementsByClassName(f)].map((q)=>{const b=C(q);return b.init(),b})},k=()=>{v("header",g)};if(document.addEventListener)document.addEventListener("DOMContentLoaded",k);else window.attachEvent("onload",k);
+// js/modules/header.js
+function header(el) {
+  function init() {
+    console.log(el);
+  }
+  return { init };
+}
+
+// js/index.js
+var setupModules = (className, include) => {
+  return [...document.getElementsByClassName(className)].map((el) => {
+    const module = include(el);
+    module.init();
+    return module;
+  });
+};
+var initSite = () => {
+  setupModules("header", header);
+};
+if (document.addEventListener)
+  document.addEventListener("DOMContentLoaded", initSite);
+else
+  window.attachEvent("onload", initSite);
