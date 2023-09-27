@@ -13,5 +13,5 @@
 </head>
 
 <body>
-  <header class="header flex">
+  <header class="header">
   </header>
