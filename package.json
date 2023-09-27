@@ -3,8 +3,8 @@
   "module": "index.js",
   "scripts": {
     "start": "bun run dev",
-    "js-dev": "bun build ./js/index.js --outdir ./ --watch",
-    "css-dev": "postcss css/tailwind.css -o css/tailwind.min.css --watch",
+    "js-dev": "bun build ./js/index.js --outdir ./ --watch --minify",
+    "css-dev": "postcss css/tailwind.css -o css/tailwind.min.css --watch --minify",
     "js-prd": "bun build ./js/index.js --outdir ./ --minify",
     "css-prd": "tailwind -o css/tailwind.min.css --minify",
     "lint": "eslint js/**/*.js --fix",
