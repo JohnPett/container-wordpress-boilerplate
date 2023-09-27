@@ -8,11 +8,13 @@
     "js-prd": "bun build ./js/index.js --outdir ./ --minify",
     "css-prd": "tailwind -o css/tailwind.min.css --minify",
     "lint": "eslint js/**/*.js --fix",
-    "dev": "concurrently \"bun run css-dev\" \"bun run js-dev\"",
+    "sync": "browser-sync start --proxy 'container-wordpress-boilerplate.local' --serveStatic './' --files './'",
+    "dev": "concurrently \"bun run css-dev\" \"bun run js-dev\" \"bun run sync\"",
     "prd": "bun run css-prd && bun run js-prd && bun run lint"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.15",
+    "browser-sync": "^2.29.3",
     "concurrently": "^8.2.1",
     "eslint": "^8.49.0",
     "eslint-config-standard": "^17.1.0",
