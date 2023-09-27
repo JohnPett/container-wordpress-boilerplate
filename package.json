@@ -10,7 +10,8 @@
     "lint": "eslint js/**/*.js --fix",
     "sync": "browser-sync start --proxy 'container-wordpress-boilerplate.local' --serveStatic './' --files './'",
     "dev": "concurrently \"bun run css-dev\" \"bun run js-dev\" \"bun run sync\"",
-    "prd": "bun run css-prd && bun run js-prd && bun run lint"
+    "prd": "bun run css-prd && bun run js-prd && bun run lint",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.15",
@@ -21,7 +22,10 @@
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-n": "^16.1.0",
     "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.0",
     "postcss-cli": "^10.1.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.4",
     "tailwindcss": "^3.3.3"
   }
 }
