@@ -8,7 +8,7 @@
     "js-prd": "bun build ./js/index.js --outdir ./ --minify",
     "css-prd": "tailwind -o css/tailwind.min.css --minify",
     "lint": "eslint js/**/*.js --fix",
-    "sync": "browser-sync start --proxy 'container-wordpress-boilerplate.local' --serveStatic './' --files './'",
+    "sync": "browser-sync start --proxy 'http://container-wordpress-boilerplate.local/' --files './**/*' --no-inject-changes",
     "dev": "concurrently \"bun run css-dev\" \"bun run js-dev\" \"bun run sync\"",
     "prd": "bun run css-prd && bun run js-prd && bun run lint",
     "prepare": "husky install"
