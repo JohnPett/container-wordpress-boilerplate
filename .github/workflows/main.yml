@@ -16,5 +16,3 @@ jobs:
           REMOTE_PATH: 'wp-content/themes/container-wordpress-boilerplate/'
           PHP_LINT: TRUE
           CACHE_CLEAR: TRUE
-      - name: Lint code
-        run: bun run prd
