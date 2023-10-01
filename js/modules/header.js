@@ -1,7 +1,7 @@
-export function header (el) {
-  function init () {
-    console.log(el)
+export function header(el) {
+  function init() {
+    console.log(el);
   }
 
-  return { init }
+  return { init };
 }
