@@ -3,4 +3,3 @@
 
 bun run prd
 git update-index -g
-
